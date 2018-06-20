@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>React App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700,900" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--start of jumbotron-->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">New York Times Article Scrubber</h1>
+            <p class="lead">Search for and save articles of interest</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--start of search card-->
+        <div class="card mb-5">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="topic">Topic</label>
+                        <input type="string" class="form-control" id="userTopic" aria-describedby="topicSearch">
+                    </div>
+                    <div class="form-group">
+                        <label for="start year">Start Year</label>
+                        <input type="number" class="form-control" id="userStartYear" aria-describedby="startYearSearch">
+                    </div>
+                    <div class="form-group">
+                        <label for="end year">End Year</label>
+                        <input type="number" class="form-control" id="userEndYear" aria-describedby="endYearSearch">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3 px-5 mb-3">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!--start of results card-->
+        <div class="card mb-5">
+            <h5 class="card-header">Results</h5>
+            <div class="card-body">
+                <div class="row py-4 border-bottom">
+                    <div class="col-sm-10">
+                        <a href="#">
+                            <h3>ARTICLE TITLE</h3>
+                        </a>
+                        <h4>DATE</h4>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-success mt-3 px-5 mb-3" data-title="title of article" data-date="date of article" data-url="url of article" data-id="number1234">Save</button>
+
+                    </div>
+                </div>
+                <div class="row py-4 border-bottom">
+                    <div class="col-sm-10">
+                        <a href="#">
+                            <h3>ARTICLE TITLE</h3>
+                        </a>
+                        <h4>DATE</h4>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-success mt-3 px-5 mb-3" data-title="title of article" data-date="date of article" data-url="url of article">Save</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!--start of saved card-->
+         <div class="card mb-5">
+            <h5 class="card-header">Saved</h5>
+            <div class="card-body">
+                <div class="row py-4 border-bottom">
+                    <div class="col-sm-10">
+                        <a href="#">
+                            <h3>ARTICLE TITLE</h3>
+                        </a>
+                        <h4>DATE</h4>
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-warning mt-3 px-5 mb-3" data-title="title of article" data-date="date of article" data-url="url of article" data-id="number1234">Delete</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
